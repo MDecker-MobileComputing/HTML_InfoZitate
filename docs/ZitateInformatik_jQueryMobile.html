@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Informatik-Zitate mit jQuery Mobile</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+    <!--
+        .unterstrichen {
+           text-decoration: underline;
+           font-style:      italic;    /* kursive Schrift */
+        }
+
+        /* Attribut-Selektor für alle externen Links */
+        a[target="_blank"] {
+           font-style: italic;
+        }
+    -->
+    </style>
+</head>
+<body>
+
+
+<div data-role="page" id="seiteHome" data-theme="b">
+    <div data-role="header"><h1>Informatiker-Zitate</h1></div>
+    <div data-role="content">
+        <p>
+          Diese Webseite ist eine kleine Sammlung von Zitaten/Sprüchen aus dem Bereich der Informatik.
+        </p>
+        <p style="padding-bottom: 20px;" >
+          Sie wurde mit <a href="http://jquerymobile.com" target="_blank">jQuery Mobile</a> erstellt.
+          Diese und die Seiten mit den Zitaten sind in einer <span class="unterstrichen">einzigen HTML-Datei</span>
+          enthalten und durch DIV-Elemente ausgezeichnet.
+          Dadurch muss der Browser nur eine HTML-Datei laden, um alle Seiten auf das Gerät zu bringen.
+          <i>jQuery Mobile</i> basiert auf der JavaScript-Bibliothek
+          <a href="http://jquery.com" target="_blank">jQuery</a>.
+        </p>
+        <ul data-role="listview">
+          <li><a href="#seite1">Zitat 1</a></li>
+          <li><a href="#seite2">Zitat 2</a></li>
+          <li><a href="#seite3">Zitat 3</a></li>
+          <li><a href="#seite4">Zitat 4</a></li>
+          <li><a href="#seite5">Zitat 5</a></li>
+          <li><a href="#seite6">Zitat 6</a></li>
+          <li><a href="#seiteAbout">Über diese Web-App</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite1" >
+    <div data-role="header"><h1>Informatik-Zitat 1</h1></div>
+    <div data-role="content">
+        <p>Mosher's Law of Software Engineering: <i>"Don’t worry if it doesn’t work right.
+           If everything did, you’d be out of a job."</i></p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seiteHome" data-iconpos="top" data-icon="home"   >Home</a></li>
+          <li><a href="#seite2"    data-iconpos="top" data-icon="arrow-r">Nächste Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite2" >
+    <div data-role="header"><h1>Informatik-Zitat 2</h1></div>
+    <div data-role="content">
+        <p><i>"Science is what we understand well enough to explain to a computer.
+              Art is everything else we do."</i></p>
+        <p>(Donald Knuth)</p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite1"    data-icon="arrow-l" >Vorherige Seite</a></li>
+          <li><a href="#seiteHome" data-icon="home"    >Home</a></li>
+          <li><a href="#seite3"    data-icon="arrow-r" >Nächste Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite3">
+    <div data-role="header"><h1>Informatik-Zitat 3</h1></div>
+    <div data-role="content">
+        <p><i>"The three golden rules to ensure computer security are:
+              do not own a computer; do not power it on; and do not use it."</i></p>
+        <p>(Robert Morris, Kryptograph)</p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite2"    data-iconpos="top" data-icon="arrow-l" >Vorherige Seite</a></li>
+          <li><a href="#seiteHome" data-iconpos="top" data-icon="home"    >Home</a></li>
+          <li><a href="#seite4"    data-iconpos="top" data-icon="arrow-r" >Nächste Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite4">
+    <div data-role="header"><h1>Informatik-Zitat 4</h1></div>
+    <div data-role="content">
+        <p><i>"You know you have a distributed system when the crash of a computer you've never heard of
+           stops you from getting any work done."</i></p>
+        <p>(Leslie Lamport)</p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite3"    data-iconpos="top" data-icon="arrow-l" >Vorherige Seite</a></li>
+          <li><a href="#seiteHome" data-iconpos="top" data-icon="home"    >Home</a></li>
+          <li><a href="#seite5"    data-iconpos="top" data-icon="arrow-r" >Nächste Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite5">
+    <div data-role="header"><h1>Informatik-Zitat 5</h1></div>
+    <div data-role="content">
+        <p><i>"Computer sind Maschinen für 3.000 Euro, die ohne Software für 5.000 Euro keine 10 Cent wert sind."</i></p>
+        <p>(Unbekannter Autor)</p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite4"    data-iconpos="top" data-icon="arrow-l" >Vorherige Seite</a></li>
+          <li><a href="#seiteHome" data-iconpos="top" data-icon="home"    >Home</a></li>
+          <li><a href="#seite6"    data-iconpos="top" data-icon="arrow-r" >Nächste Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seite6">
+    <div data-role="header"><h1>Informatik-Zitat 6</h1></div>
+    <div data-role="content">
+        <p><i>"To err is human, but for a real disaster you need a computer."</i></p>
+        <p>(Unbekannter Autor)</p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite5"     data-iconpos="top" data-icon="arrow-l" >Vorherige Seite</a></li>
+          <li><a href="#seiteHome"  data-iconpos="top" data-icon="home"    >Home</a></li>
+          <li><a href="#seiteAbout" data-iconpos="top" data-icon="arrow-r" >Zur About-Seite</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="b" id="seiteAbout">
+    <div data-role="header">
+      <h1>Über diese HTML-App</h1>
+      <a href="#seiteAlsDialog" class="ui-btn-right" data-icon="info" data-rel="dialog">&nbsp;</a>
+    </div>
+    <div data-role="content">
+        <p>
+          Die für die Nutzung von <a href="http://jquerymobile.com" target="_blank">jQuery Mobile</a>
+          notwendigen JavaScript-Bibliotheken und die zugehörige CSS-Datei (Stylesheet)
+          werden von einem <i>Content Distribution Network (CDN)</i> nachgeladen.
+          Diese Dateien können aber auch auf dem Web-Server mit der Web-App abgelegt werden.
+        </p>
+        <p>
+          Alle angezeigten Seiten sind in einem HTML-Dokument enthalten, wo
+          sie durch <i>&lt;div&gt;</i>-Elemente mit entsprechenden Attributen ausgezeichnet sind.
+          Hierzu definiert <i>jQuery Mobile</i> sog.
+          <a href="http://html5doctor.com/html5-custom-data-attributes/" target="_blank">"Custom Data Attributes"</a>,
+          die mit <code>"data-"</code> beginnen müssen, z.B.
+          <code>"data-role"</code> oder <code>"data-theme"</code>.
+        </p>
+        <p>
+          Durch Betätigung des <i>"i"</i>-Buttons rechts oben auf dieser Seite wird ein
+          Dialog mit Versions-Informationen geöffnet.
+        </p>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#seite6"    data-iconpos="top" data-icon="arrow-l" >Zum letzten Zitat</a></li>
+          <li><a href="#seiteHome" data-iconpos="top" data-icon="home"    >Home</a></li>
+          <li><a href="#seite1"    data-iconpos="top" data-icon="arrow-r" >Zum ersten Zitat</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<!-- Diese Seite kann als Dialog von der About-Seite aus angezeigt werden. -->
+<div data-role="page" data-theme="b" id="seiteAlsDialog">
+  <div data-role="header"><h1>Versions-Information</h1></div>
+  <div data-role="content">
+    <p>Ab Januar 2015, erstellt mit <i>jQuery Mobile 1.4.5</i> und <i>jQuery 1.11.1</i>.</p>
+  </div>
+</div>
+
+</body>
+</html>
