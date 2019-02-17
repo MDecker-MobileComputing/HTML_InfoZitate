@@ -15,6 +15,8 @@ This HTML file could be put into a native app containter created by
 
 The HTML file in this repository can be viewed directly at [this URL](https://mdecker-mobilecomputing.github.io/HTML_InfoZitate/index.html).
 
+Short URL: [http://bit.ly/2N9ASFi](http://bit.ly/2N9ASFi).
+
 <br>
 
 ----
